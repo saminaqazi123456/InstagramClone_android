@@ -75,7 +75,5 @@ public class LoginActivity extends AppCompatActivity {
 
 
 /*
-public class LoginActivity {
-
-}
+Can add to activity_login.xml in future:  android:inputType="textEmailAddress"
 */

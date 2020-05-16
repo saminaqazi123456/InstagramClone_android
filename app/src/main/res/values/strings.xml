@@ -2,6 +2,6 @@
     <string name="app_name">InstagramClone_android</string>
     <string name="log_in">Login</string>
     <string name="sign_up">Signup</string>
-    <string name="email">Email</string>
+    <string name="email">Username</string>
     <string name="password">Password</string>
 </resources>
