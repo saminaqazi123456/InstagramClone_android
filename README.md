@@ -1,4 +1,4 @@
-# Project 3 - *InstagramClone_android*
+# Unit 5 - *InstagramClone_android*
 
 **InstagramClone_android** is a photo sharing app similar to Instagram but using Parse as its backend.
 
