@@ -104,7 +104,7 @@ public class LoginActivity extends AppCompatActivity {
         ParseUser.logOut();
         ParseUser currentUser = ParseUser.getCurrentUser(); // this will now be null
 
-        // Send user back to login scrren after signup
+        // Send user back to login screen after signup
 
 
     }

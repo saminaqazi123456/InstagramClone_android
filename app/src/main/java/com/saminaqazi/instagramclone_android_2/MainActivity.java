@@ -7,10 +7,10 @@ import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.saminaqazi.instagramclone_android_2.fragments.ComposeFragment;
+import com.saminaqazi.instagramclone_android_2.fragments.LogoutFragment;
 import com.saminaqazi.instagramclone_android_2.fragments.PostsFragment;
 import com.saminaqazi.instagramclone_android_2.fragments.ProfileFragment_JavaClass;
 
@@ -54,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.action_compose:
                         // Toast.makeText(MainActivity.this, "Compose!", Toast.LENGTH_SHORT).show();
                         fragment = new ComposeFragment();
+                        break;
+                    case R.id.action_logout:
+                        // Toast.makeText(MainActivity.this, "Compose!", Toast.LENGTH_SHORT).show();
+                        fragment = new LogoutFragment();
+                        //MainActivity.this.finish(); // Don't use this way because it works async and logs out user in the middle of the app
                         break;
                     case R.id.action_profile:
                     default:

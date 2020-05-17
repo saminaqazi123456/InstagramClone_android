@@ -10,8 +10,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
+//import com.bumptech.glide.Glide;
+//import com.bumptech.glide.annotation.GlideModule;
+//import com.bumptech.glide.module.AppGlideModule;
+// Glide gives warning: Failed to find GeneratedAppGlideModule....silently ignored. Switching to ParseImageView.
+
 import com.parse.ParseFile;
+import com.parse.ui.widget.ParseImageView;
 
 import java.util.List;
 
@@ -44,10 +49,12 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
         return posts.size();
     }
 
+
     class ViewHolder extends RecyclerView.ViewHolder {
 
         private TextView tvUsername;
-        private ImageView ivImage;
+        // private ImageView ivImage;
+        private ParseImageView ivImage;
         private TextView tvDescription;
 
         public ViewHolder(@NonNull View itemView) {
@@ -63,7 +70,19 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
             tvUsername.setText(post.getUser().getUsername());
             ParseFile image = post.getImage();
             if (image != null) {
-                Glide.with(context).load(post.getImage().getUrl()).into(ivImage);
+                //Glide.with(context).load(post.getImage().getUrl()).into(ivImage);
+
+                ivImage.setParseFile(post.getImage());  // ivImage is ParseImageView, not ImageView
+                ivImage.loadInBackground();
+
+                // Parse Example:
+                //imageView.setParseFile(post.getMedia());
+                //imageView.loadInBackground()
+
+                // Guide Example:
+                //Glide.with(view.context).load(post.getMedia().getUrl()).into(imageView);
+                // https://guides.codepath.org/android/Building-Data-driven-Apps-with-Parse#rendering-parsefile-objects
+
             }
 
 

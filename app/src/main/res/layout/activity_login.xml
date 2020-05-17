@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp"
+    android:layout_margin="10dp"
     android:layout_gravity="center"
     android:layout_marginTop="4dp"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context="com.saminaqazi.instagramclone_android_2.LoginActivity">
 
     <ImageView
         android:layout_width="120dp"
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:ems="10"
-        android:hint="@string/email" />
+        android:hint="@string/username" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -39,8 +39,20 @@
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:layout_weight="1"
-        android:clickable="true"
-        android:text="@string/log_in" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/log_in"
+        android:textColor="#5623AB"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/sign_up"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#5623AB" />
 
 </LinearLayout>

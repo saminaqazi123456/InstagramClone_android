@@ -14,7 +14,12 @@
         android:text="samina"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-    <ImageView
+    <!-- The following was <ImageView previously
+    <com.parse.ParseImageView
+    android:layout_width="match_parent"
+    android:layout_height="300dp"/> -->
+
+    <com.parse.ui.widget.ParseImageView
         android:id="@+id/ivImage"
         android:layout_width="match_parent"
         android:layout_height="300dp"
