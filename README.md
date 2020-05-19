@@ -95,7 +95,9 @@ Added logout functionality in the bottom navigation bar. If the user exits app w
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/saminaqazi123456/InstagramClone_android/blob/master/walkthroughNew.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough OLD' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
