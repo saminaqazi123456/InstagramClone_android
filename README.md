@@ -95,7 +95,9 @@ Added logout functionality in the bottom navigation bar. If the user exits app w
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/saminaqazi123456/InstagramClone_android/blob/master/walkthroughNew.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/saminaqazi123456/InstagramClone_android/blob/master/walkthrough_2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='https://github.com/saminaqazi123456/InstagramClone_android/blob/master/walkthrough_3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough - Pull to Refresh' />
 
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough OLD' />
 
@@ -104,6 +106,13 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+## Additional Features
+
+- Logout feature - App persists user between app restarts unless the user has chosen to Logout. Logout is the fourth option on the Bottom Nav bar.
+- Signup feature special - When the user signs up, they are taken back to the login screen to login instead of being auto-login to the Home. This is additional check for authentication.
+- A goodbye screen is displayed and a countdown of 5 seconds is run when the user logs out.
+- Two walkthroushs have been added. First is end to end functionality. Second one was added to show the pull to refresh functionality recently added in the latest version of the app.
 
 ## Open-source libraries used
 
